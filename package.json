@@ -1,0 +1,22 @@
+{
+    "name": "clipcc-extension-json",
+    "version": "1.0.0",
+    "description": "JSON extension for ClipCC.",
+    "main": "dist/main.js",
+    "author": "Alex Cui",
+    "license": "AGPL-3.0",
+    "scripts": {
+        "build": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist && webpack --colors --bail"
+    },
+    "dependencies": {
+        "clipcc-extension": "^0.1.1"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^6.2.0",
+        "mkdirp": "^1.0.4",
+        "rimraf": "^3.0.2",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12",
+        "zip-webpack-plugin": "^3.0.0"
+    }
+}

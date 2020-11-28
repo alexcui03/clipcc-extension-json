@@ -1,0 +1,6 @@
+{
+    "alexcui.json.name": "JSON Extension",
+    "alexcui.json.description": "An extension for JSON.",
+    "alexcui.json.get": "get key [KEY] from [JSON]",
+    "alexcui.json.set": "set key [KEY] to [VALUE] in [JSON]"
+}
