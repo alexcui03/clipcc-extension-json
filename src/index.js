@@ -1,6 +1,6 @@
 const ClipCC = require('clipcc-extension');
 
-class SampleExtension extends ClipCC.Extension {
+class JsonExtension extends ClipCC.Extension {
     get(json, key) {
         let parsedObject = JSON.parse(json);
         const parsedParam = key.split('.');
@@ -24,7 +24,7 @@ class SampleExtension extends ClipCC.Extension {
     init() {
         ClipCC.API.addCategory({
             categoryId: 'alexcui.json.json',
-            messageId: 'JSON',
+            messageId: 'alexcui.json.json',
             color: '#FFB11B'
         });
         ClipCC.API.addBlock({
@@ -36,11 +36,11 @@ class SampleExtension extends ClipCC.Extension {
             argument: {
                 KEY: {
                     type: ClipCC.Type.ArgumentType.STRING,
-                    default: ''
+                    default: 'foo'
                 },
                 JSON: {
                     type: ClipCC.Type.ArgumentType.STRING,
-                    default: ''
+                    default: '{"foo":"bar"}'
                 }
             }
         });
@@ -54,19 +54,19 @@ class SampleExtension extends ClipCC.Extension {
             argument: {
                 KEY: {
                     type: ClipCC.Type.ArgumentType.STRING,
-                    default: 'value'
+                    default: 'foo'
                 },
                 VALUE: {
                     type: ClipCC.Type.ArgumentType.STRING,
-                    default: ' '
+                    default: 'baz'
                 },
                 JSON: {
                     type: ClipCC.Type.ArgumentType.STRING,
-                    default: ''
+                    default: '{"foo":"bar"}'
                 }
             }
         })
     }
 }
 
-module.exports = SampleExtension;
+module.exports = JsonExtension;

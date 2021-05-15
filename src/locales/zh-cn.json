@@ -1,6 +1,7 @@
 {
     "alexcui.json.name": "JSON扩展",
     "alexcui.json.description": "用来处理JSON数据的扩展。",
+    "alexcui.json.json": "JSON",
     "alexcui.json.get": "获取 [JSON] 中 [KEY] 的值",
     "alexcui.json.set": "设置 [JSON] 中 [KEY] 的值为 [VALUE]"
 }
